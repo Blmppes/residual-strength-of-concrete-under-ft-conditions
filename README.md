@@ -5,13 +5,13 @@ This project aims to predict the Decreased Compressive Strength (DCS) of concret
 The models have been trained and tuned based on a scientific dataset and evaluated using MAE, RMSE, and R² metrics. The objective is to outperform results from prior studies and offer reproducible experiments.
 
 ## 📁 Files Overview
-- ann_model.py         → Train and evaluate the ANN model.
-- svm_model.py         → Train and evaluate the SVM model.
-- rf_model.py          → Train and evaluate the Random Forest model.
+- notebooks/ann_model.ipynb         → Train and evaluate the ANN model.
+- notebooks/svm_model.ipynb         → Train and evaluate the SVM model.
+- notebooks/rf_model.ipynb          → Train and evaluate the Random Forest model.
 - requirements.txt     → Fixed-version environment to guarantee reproducibility.
-- ann_model.keras      → Saved ANN model in Keras HDF5 format.
-- svm_model.pkl        → Saved SVM model using `joblib`.
-- rf_model.pkl         → Saved Random Forest model using `joblib`.
+- models/ann_model.keras      → Saved ANN model in Keras HDF5 format.
+- models/svm_model.pkl        → Saved SVM model using `joblib`.
+- models/rf_model.pkl         → Saved Random Forest model using `joblib`.
 
 ## ✅ Reproduce Results
 
@@ -22,6 +22,7 @@ pip install -r requirements.txt
 2. **Train models**:
 You can run the corresponding *.py files to retrain models from scratch.
 3. **Load pretrained models**:
+
 Load ANN:
 ```
 from tensorflow.keras.models import load_model
