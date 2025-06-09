@@ -18,13 +18,18 @@ The models have been trained and tuned based on a scientific dataset and evaluat
 1. **Install dependencies**:
 ```bash
 pip install -r requirements.txt
+```
 2. **Train models**:
 You can run the corresponding *.py files to retrain models from scratch.
 3. **Load pretrained models**:
 Load ANN:
+```
 from tensorflow.keras.models import load_model
 model = load_model("ann_model.keras")
+```
 Load SVM or RF:
+```
 import joblib
 svm_model = joblib.load("svm_model.pkl")
 rf_model = joblib.load("rf_model.pkl")
+```
