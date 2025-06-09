@@ -1,0 +1,14 @@
+# Core dependencies
+numpy==1.26.4
+pandas==2.2.3
+scikit-learn==1.2.2
+matplotlib==3.7.2
+
+# TensorFlow + Keras
+tensorflow==2.18.0
+
+# Model saving/loading
+joblib==1.5.0
+
+# To suppress warnings
+warnings-filter==0.1.2
